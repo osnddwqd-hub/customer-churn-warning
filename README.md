@@ -319,19 +319,11 @@ These customers can be prioritized for:
 ## Confusion Matrix
 
 
-(Add image here)
-
-
 images/confusion_matrix.png
 
 
 
-
 ## Feature Importance
-
-
-(Add image here)
-
 
 images/feature_importance.png
 

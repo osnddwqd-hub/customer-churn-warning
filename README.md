@@ -335,7 +335,7 @@ images/confusion_matrix.png
 
 images/feature_importance.png
 
-# 13. Technology Stack
+# 12. Technology Stack
 
 
 ## Programming Language
@@ -363,7 +363,7 @@ images/feature_importance.png
 
 ---
 
-# 14. Business Application
+# 13. Business Application
 
 
 This project demonstrates a complete machine learning workflow:
@@ -394,7 +394,7 @@ The generated customer risk list can help e-commerce companies improve customer 
 
 ---
 
-# 15. Future Improvements
+# 14. Future Improvements
 
 
 Possible improvements:

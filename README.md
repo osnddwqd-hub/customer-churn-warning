@@ -317,16 +317,10 @@ These customers can be prioritized for:
 
 
 ## Confusion Matrix
-
-
-![confusion_matrix]images/confusion_matrix.png
-
-
+![confusion_matrix](images/confusion_matrix.png)
 
 ## Feature Importance
-
-![feature_importance]images/feature_importance.png
-
+![feature_importance](images/feature_importance.png)
 # 12. Technology Stack
 
 

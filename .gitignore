@@ -1,0 +1,8 @@
+data/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/user_month_samples.csv
+output/test_predictions.csv
+output/december_forecast.csv
+online-retail.zip

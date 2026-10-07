@@ -1,0 +1,210 @@
+{
+  "target": "NoPurchaseNextMonth",
+  "target_definition": "1=no valid purchase in next calendar month, 0=at least one",
+  "observation_months": 3,
+  "eligible_population": "customers with >=1 valid purchase in observation window",
+  "data_sha256": "43465a06f2ccf7c8b5bd2892bc7defb52f97487934fe93b16ae4c3936424676d",
+  "raw_rows": 541909,
+  "clean_rows": 392692,
+  "clean_unique_customers": 4338,
+  "coverage_start": "2010-12-01",
+  "coverage_end_exclusive": "2011-12-10",
+  "splits": [
+    {
+      "split": "train",
+      "prediction_months": [
+        "2011-03",
+        "2011-04",
+        "2011-05",
+        "2011-06",
+        "2011-07"
+      ],
+      "rows": 9316,
+      "unique_customers": 2960,
+      "positive_rate": 0.6802275654787462
+    },
+    {
+      "split": "validation",
+      "prediction_months": [
+        "2011-08"
+      ],
+      "rows": 2030,
+      "unique_customers": 2030,
+      "positive_rate": 0.6763546798029557
+    },
+    {
+      "split": "test",
+      "prediction_months": [
+        "2011-09",
+        "2011-10",
+        "2011-11"
+      ],
+      "rows": 6589,
+      "unique_customers": 2991,
+      "positive_rate": 0.6090453786614054
+    }
+  ],
+  "selected_C": 0.1,
+  "validation_candidates": [
+    {
+      "C": 0.1,
+      "validation_roc_auc": 0.7193027965957957,
+      "validation_average_precision": 0.8098400302585487
+    },
+    {
+      "C": 1.0,
+      "validation_roc_auc": 0.7192207622322659,
+      "validation_average_precision": 0.8096182453322711
+    },
+    {
+      "C": 10.0,
+      "validation_roc_auc": 0.7192152193698651,
+      "validation_average_precision": 0.8096003070904689
+    }
+  ],
+  "test_results": {
+    "rfm_logistic": {
+      "rows": 6589,
+      "positive_rate": 0.6090453786614054,
+      "threshold": 0.35000000000000003,
+      "accuracy": 0.6670207922294734,
+      "precision": 0.6511048346901479,
+      "recall": 0.9765761275853476,
+      "f1": 0.7812998405103668,
+      "roc_auc": 0.6850890661251554,
+      "average_precision": 0.7369169080279133,
+      "brier_score": 0.2128373317843906,
+      "confusion_matrix": [
+        [
+          476,
+          2100
+        ],
+        [
+          94,
+          3919
+        ]
+      ]
+    },
+    "recency_logistic": {
+      "rows": 6589,
+      "positive_rate": 0.6090453786614054,
+      "threshold": 0.05,
+      "accuracy": 0.6090453786614054,
+      "precision": 0.6090453786614054,
+      "recall": 1.0,
+      "f1": 0.7570269760422562,
+      "roc_auc": 0.5553476337771807,
+      "average_precision": 0.6577136197359871,
+      "brier_score": 0.24028657557739902,
+      "confusion_matrix": [
+        [
+          0,
+          2576
+        ],
+        [
+          0,
+          4013
+        ]
+      ]
+    },
+    "constant_prior": {
+      "rows": 6589,
+      "positive_rate": 0.6090453786614054,
+      "threshold": 0.05,
+      "accuracy": 0.6090453786614054,
+      "precision": 0.6090453786614054,
+      "recall": 1.0,
+      "f1": 0.7570269760422562,
+      "roc_auc": 0.5,
+      "average_precision": 0.6090453786614054,
+      "brier_score": 0.24317600911268955,
+      "confusion_matrix": [
+        [
+          0,
+          2576
+        ],
+        [
+          0,
+          4013
+        ]
+      ]
+    }
+  },
+  "test_results_by_month": {
+    "2011-09": {
+      "rows": 1948,
+      "positive_rate": 0.6226899383983573,
+      "threshold": 0.35000000000000003,
+      "accuracy": 0.6806981519507187,
+      "precision": 0.6668548842461886,
+      "recall": 0.9736191261335532,
+      "f1": 0.7915549597855228,
+      "roc_auc": 0.7107323720914582,
+      "average_precision": 0.7680733067819672,
+      "brier_score": 0.20300557179979659,
+      "confusion_matrix": [
+        [
+          145,
+          590
+        ],
+        [
+          32,
+          1181
+        ]
+      ]
+    },
+    "2011-10": {
+      "rows": 2161,
+      "positive_rate": 0.6381304951411384,
+      "threshold": 0.35000000000000003,
+      "accuracy": 0.6899583526145303,
+      "precision": 0.6796756208819057,
+      "recall": 0.9724437998549673,
+      "f1": 0.8001193317422435,
+      "roc_auc": 0.6580266845206411,
+      "average_precision": 0.742221171621445,
+      "brier_score": 0.20976566856250678,
+      "confusion_matrix": [
+        [
+          150,
+          632
+        ],
+        [
+          38,
+          1341
+        ]
+      ]
+    },
+    "2011-11": {
+      "rows": 2480,
+      "positive_rate": 0.572983870967742,
+      "threshold": 0.35000000000000003,
+      "accuracy": 0.6362903225806451,
+      "precision": 0.614065934065934,
+      "recall": 0.9831104855735397,
+      "f1": 0.7559523809523809,
+      "roc_auc": 0.6899738111518907,
+      "average_precision": 0.7112208587807988,
+      "brier_score": 0.22323657882974554,
+      "confusion_matrix": [
+        [
+          181,
+          878
+        ],
+        [
+          24,
+          1397
+        ]
+      ]
+    }
+  },
+  "forecast_month": "2011-12",
+  "forecast_eligible_customers": 2851,
+  "forecast_status": "unlabeled forecast; incomplete December cannot be evaluated",
+  "versions": {
+    "python": "3.12.14",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}

@@ -1,0 +1,4 @@
+feature,standardized_coefficient
+Recency,-0.10579333278091
+log1p(Frequency),-0.7670565573319489
+log1p(Monetary),-0.2803716686149889

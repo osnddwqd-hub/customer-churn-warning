@@ -2,9 +2,9 @@
 
 用**过去三个月的购买行为，预测客户下一个自然月是否购买**。这是一个可复现的逻辑回归基线项目：从原始交易流水构造“用户 × 月份”样本，按时间训练、验证和测试，并输出按风险排序的客户名单。
 
-> **版本修正：** 原版 `Recency > 90 → Churn`，再用 Recency 预测 Churn，实际上是在学习已知规则。原来的 Accuracy≈99%、AUC=1.00 不能证明未来预测能力，已撤下并用真实时间测试结果替换。新版预测的是“次月未购买”，并不等于认定客户永久流失。
+> 模型预测的是“次月未购买”，并不等于认定客户永久流失。
 
-[在 Colab 打开 Notebook](https://colab.research.google.com/github/osnddwqd-hub/customer-churn-warning/blob/main/notebook/customer_churn_prediction.ipynb) · [结果文件](output/metrics.json) · [修改逻辑与面试说明](docs/methodology.md)
+[在 Colab 打开 Notebook](https://colab.research.google.com/github/osnddwqd-hub/customer-churn-warning/blob/main/notebook/customer_churn_prediction.ipynb) · [结果文件](output/metrics.json) · [项目方法与面试说明](docs/methodology.md)
 
 ## 预测问题
 
